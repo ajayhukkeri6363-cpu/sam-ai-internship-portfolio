@@ -3,35 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ajay Hukkeri - Computer Science Student &amp; Web Developer Portfolio" />
-  <title>Ajay Hukkeri | Developer Portfolio</title>
+  <meta name="description" content="Ajay Hukkeri — Computer Science Student &amp; Web Developer Portfolio | SAM AI Technologies Internship" />
+  <title>Ajay Hukkeri | Cinematic Developer Portfolio</title>
   
-  <!-- Fonts & Icons -->
+  <!-- Preconnect Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
   
-  <!-- Main Stylesheet -->
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Main Cinematic Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- Ambient Cinematic Background Lighting -->
-  <div class="ambient-layer">
-    <div class="glow-orb orb-1"></div>
-    <div class="glow-orb orb-2"></div>
-    <div class="glow-orb orb-3"></div>
+  <!-- Ambient Atmospheric Lighting Background Layer -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="ambient-glow-orb orb-primary"></div>
+    <div class="ambient-glow-orb orb-secondary"></div>
+    <div class="ambient-glow-orb orb-tertiary"></div>
   </div>
 
-  <!-- Header & Navigation -->
+  <!-- Glassmorphism Navigation Header -->
   <header class="header" id="header">
     <div class="container nav-container">
-      <a href="#hero" class="logo" aria-label="Home">
-        <span class="logo-bracket">&lt;</span><span class="logo-name">Ajay.Hukkeri</span><span class="logo-bracket"> /&gt;</span>
+      <!-- Brand Logo -->
+      <a href="#hero" class="logo" aria-label="Ajay Hukkeri Portfolio Home">
+        <span class="logo-tag">&lt;</span><span class="logo-name">Ajay.Hukkeri</span><span class="logo-tag"> /&gt;</span>
       </a>
 
-      <!-- Desktop & Mobile Navigation Links -->
-      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
         <ul class="nav-list">
           <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
           <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -42,12 +45,18 @@
         </ul>
       </nav>
 
-      <!-- Theme Toggle & Mobile Hamburger -->
+      <!-- Navbar Actions (Connect CTA, Theme Toggle, Mobile Hamburger) -->
       <div class="nav-actions">
+        <a href="#contact" class="btn btn-nav-connect d-none-mobile">
+          <span>Let's Connect</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        
         <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
           <i class="fa-solid fa-moon dark-icon"></i>
           <i class="fa-solid fa-sun light-icon"></i>
         </button>
+
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -58,124 +67,218 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero Section -->
+    <!-- ======================================================================
+         HERO SECTION: Full-Screen Cinematic Developer Environment
+         ====================================================================== -->
     <section class="hero section" id="hero">
-      <!-- High-End Cinematic Background Layer -->
-      <div class="hero-bg-media" aria-hidden="true">
-        <img src="assets/images/hero-cinematic-bg.jpg" alt="" class="hero-bg-img" />
-        <div class="hero-vignette-overlay"></div>
+      <!-- High-End Cinematic Workstation Background Image Layer -->
+      <div class="hero-backdrop" aria-hidden="true">
+        <img src="assets/images/hero-cinematic-bg.jpg" alt="" class="hero-backdrop-img" />
+        <div class="hero-gradient-left"></div>
+        <div class="hero-gradient-bottom"></div>
+        <div class="hero-gradient-top"></div>
       </div>
 
       <div class="container hero-container">
+        <!-- Hero Left Column: Powerful Identity & Introduction -->
         <div class="hero-content">
-          <div class="hero-badge">
-            <span class="status-dot"></span> Open for Software &amp; Web Development Roles
+          <!-- Availability Pill -->
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span class="status-text">Available for Opportunities • SAM AI Tech Intern</span>
           </div>
+
+          <!-- Bold Cinematic Headline -->
           <h1 class="hero-title">
-            Hi, I'm <span class="highlight-text">Ajay Hukkeri</span>
+            <span class="hero-greeting">Hi, I'm</span>
+            <span class="hero-name-gradient">AJAY HUKKERI</span>
           </h1>
-          <p class="hero-subtitle">
-            Computer Science Student | Web Developer
+
+          <!-- Role Subtitle -->
+          <p class="hero-role">
+            <span class="role-highlight">Computer Science Student</span>
+            <span class="role-separator">•</span>
+            <span class="role-highlight">Web Developer</span>
           </p>
+
+          <!-- Narrative Description -->
           <p class="hero-description">
-            Passionate Computer Science undergraduate at REVA University, specializing in designing and implementing responsive, user-centric web applications with clean architecture and modern performance.
+            Computer Science undergraduate at <strong>REVA University, Bangalore</strong>. Dedicated to building responsive, high-performance web applications with clean architecture, state persistence, and modern user experiences.
           </p>
+
+          <!-- Quick Metadata Chips -->
+          <div class="hero-quick-chips">
+            <span class="chip-item"><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE, REVA University</span>
+            <span class="chip-item"><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka, India</span>
+            <span class="chip-item"><i class="fa-solid fa-briefcase"></i> SAM AI Technologies</span>
+          </div>
+
+          <!-- CTA Buttons Group -->
           <div class="hero-cta-group">
-            <a href="#projects" class="btn btn-primary">
-              <i class="fa-solid fa-layer-group"></i> View My Work
+            <a href="#projects" class="btn btn-cinematic-primary">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>View My Work</span>
+              <i class="fa-solid fa-arrow-right btn-arrow"></i>
             </a>
-            <a href="#contact" class="btn btn-secondary">
-              <i class="fa-regular fa-envelope"></i> Get in Touch
+            <a href="#contact" class="btn btn-cinematic-secondary">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Get in Touch</span>
             </a>
-            <a href="#resume" class="btn btn-outline">
-              <i class="fa-regular fa-file-pdf"></i> Resume
+            <a href="#resume" class="btn btn-cinematic-outline">
+              <i class="fa-regular fa-file-pdf"></i>
+              <span>Resume</span>
             </a>
           </div>
-          <div class="hero-socials">
+
+          <!-- Minimal Circular Glass Social Links -->
+          <div class="hero-social-row">
             <span class="social-label">Connect:</span>
-            <a href="https://github.com/ajayhukkeri6363-cpu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/ajay-hukkeri-45094233a/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="mailto:ajayhukkeri6363@gmail.com" class="social-link" aria-label="Email Address">
-              <i class="fa-regular fa-envelope"></i>
-            </a>
+            <div class="social-pills">
+              <a href="https://github.com/ajayhukkeri6363-cpu" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub Profile" title="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/ajay-hukkeri-45094233a/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="mailto:ajayhukkeri6363@gmail.com" class="social-circle-btn" aria-label="Email Address" title="Send Email">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </div>
           </div>
         </div>
+
+        <!-- Hero Right Column: Sleek Glass Tech HUD & Live Track Overview -->
         <div class="hero-visual">
-          <div class="code-card">
-            <div class="code-card-header">
-              <span class="dot red"></span>
-              <span class="dot yellow"></span>
-              <span class="dot green"></span>
-              <span class="code-title">developer.json</span>
+          <div class="glass-tech-hud">
+            <!-- HUD Header -->
+            <div class="hud-header">
+              <div class="hud-window-controls">
+                <span class="hud-dot red"></span>
+                <span class="hud-dot yellow"></span>
+                <span class="hud-dot green"></span>
+              </div>
+              <div class="hud-title"><i class="fa-solid fa-terminal"></i> dev_environment.sh</div>
+              <div class="hud-status-badge"><span class="hud-live-dot"></span> LIVE</div>
             </div>
-            <pre class="code-body"><code><span class="json-key">"name"</span>: <span class="json-string">"Ajay Hukkeri"</span>,
-<span class="json-key">"role"</span>: <span class="json-string">"Computer Science Student / Web Developer"</span>,
-<span class="json-key">"education"</span>: <span class="json-string">"B.Tech CSE, REVA University"</span>,
-<span class="json-key">"location"</span>: <span class="json-string">"Bengaluru, Karnataka, India"</span>,
-<span class="json-key">"internship"</span>: <span class="json-string">"SAM AI Technologies"</span>,
-<span class="json-key">"skills"</span>: [
-  <span class="json-string">"HTML5 / CSS3 / JavaScript"</span>,
-  <span class="json-string">"Python / Flask / MySQL"</span>,
-  <span class="json-string">"C / C++ / Java / Git"</span>
-],
-<span class="json-key">"status"</span>: <span class="json-string">"Building Real-World Projects 🚀"</span></code></pre>
+
+            <!-- HUD Body -->
+            <div class="hud-body">
+              <div class="hud-code-line">
+                <span class="hud-prompt">$</span> <span class="hud-cmd">developer.info</span> <span class="hud-flag">--profile</span>
+              </div>
+              <div class="hud-output-block">
+                <div class="hud-row"><span class="hud-label">Name:</span> <span class="hud-val text-cyan">Ajay Hukkeri</span></div>
+                <div class="hud-row"><span class="hud-label">Degree:</span> <span class="hud-val text-white">B.Tech CSE (REVA University)</span></div>
+                <div class="hud-row"><span class="hud-label">Location:</span> <span class="hud-val text-muted">Bengaluru, Karnataka, India</span></div>
+                <div class="hud-row"><span class="hud-label">Internship:</span> <span class="hud-val text-purple">SAM AI Technologies</span></div>
+              </div>
+
+              <div class="hud-code-line">
+                <span class="hud-prompt">$</span> <span class="hud-cmd">load_stack</span> <span class="hud-flag">--verified</span>
+              </div>
+              <div class="hud-stack-tags">
+                <span class="hud-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="hud-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span class="hud-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="hud-tag"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="hud-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+                <span class="hud-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+              </div>
+
+              <div class="hud-code-line">
+                <span class="hud-prompt">$</span> <span class="hud-cmd">verify_projects</span>
+              </div>
+              <div class="hud-project-status-list">
+                <div class="hud-proj-item">
+                  <i class="fa-solid fa-circle-check text-green"></i>
+                  <span>Task 2: TaskFlow To-Do App</span>
+                  <span class="hud-proj-badge">Verified</span>
+                </div>
+                <div class="hud-proj-item">
+                  <i class="fa-solid fa-circle-check text-green"></i>
+                  <span>Task 4: AuraStream Music Player</span>
+                  <span class="hud-proj-badge">Verified</span>
+                </div>
+                <div class="hud-proj-item">
+                  <i class="fa-solid fa-circle-check text-green"></i>
+                  <span>Task 1 &amp; 3: Developer Portfolio</span>
+                  <span class="hud-proj-badge">Verified</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- HUD Footer -->
+            <div class="hud-footer">
+              <span class="hud-cursor-blink">▍</span> Ready for deployment &amp; code review
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ======================================================================
+         ABOUT SECTION: Academic Background, Focus & Core Competencies
+         ====================================================================== -->
     <section class="about section" id="about">
       <div class="container">
+        <!-- Section Header -->
         <div class="section-header">
-          <span class="section-tag">About Me</span>
+          <span class="section-tag">// ABOUT ME</span>
           <h2 class="section-title">Background &amp; Experience</h2>
           <div class="section-divider"></div>
         </div>
 
         <div class="about-grid">
+          <!-- Left Column: Glass Profile Card -->
           <div class="about-image-wrapper">
             <div class="about-avatar-card">
+              <div class="avatar-glow-halo"></div>
               <div class="avatar-inner">
-                <img src="assets/images/profile-placeholder.svg" alt="Ajay Hukkeri - Web Developer Profile" class="avatar-img" />
+                <img src="assets/images/profile-placeholder.svg" alt="Ajay Hukkeri — Computer Science Student &amp; Web Developer" class="avatar-img" />
               </div>
-              <div class="avatar-badge">
-                <i class="fa-solid fa-graduation-cap"></i> B.Tech CSE • REVA University
+              <div class="avatar-meta-box">
+                <h4 class="avatar-name">Ajay Hukkeri</h4>
+                <p class="avatar-title">B.Tech Computer Science &amp; Engineering</p>
+                <div class="avatar-badge">
+                  <i class="fa-solid fa-graduation-cap"></i> REVA University, Bangalore
+                </div>
               </div>
             </div>
           </div>
 
+          <!-- Right Column: Narrative & Highlights -->
           <div class="about-content">
             <h3 class="about-heading">Designing &amp; Implementing User-Centric, Responsive Web Solutions</h3>
             <p class="about-text">
-              I am a Computer Science &amp; Engineering undergraduate at <strong>REVA University, Bangalore</strong> (2024–Present). I am dedicated to designing and implementing responsive web pages with a focus on user-centric features, improving usability, performance, and overall user experience.
+              I am a dedicated Computer Science &amp; Engineering undergraduate at <strong>REVA University, Bangalore</strong> (2024–Present). My focus is on engineering clean, responsive web interfaces that prioritize intuitive usability, cross-device performance, and structured code architecture.
             </p>
             <p class="about-text">
-              During my internship at <strong>SAM AI Technologies</strong>, I built and deployed structured web projects showcasing responsive layouts, state persistence with the Web Storage API, and media control via the HTML5 Audio API.
+              During my internship at <strong>SAM AI Technologies</strong>, I built and deployed structured web projects demonstrating responsive grid layouts, persistent client-side data management using the Web Storage API, and media playback control via the HTML5 Audio API.
             </p>
 
             <div class="about-highlights">
+              <!-- Highlight 1 -->
               <div class="highlight-item">
                 <div class="highlight-icon"><i class="fa-solid fa-code"></i></div>
-                <div>
-                  <h4 class="highlight-title">Core Programming</h4>
+                <div class="highlight-info">
+                  <h4 class="highlight-title">Core Programming Foundation</h4>
                   <p class="highlight-desc">Strong foundation in C, C++, Java, Python, and JavaScript ES6+.</p>
                 </div>
               </div>
+
+              <!-- Highlight 2 -->
               <div class="highlight-item">
                 <div class="highlight-icon"><i class="fa-solid fa-mobile-screen"></i></div>
-                <div>
-                  <h4 class="highlight-title">Responsive Web Design</h4>
-                  <p class="highlight-desc">Mobile-first, accessible, and fast-loading web applications.</p>
+                <div class="highlight-info">
+                  <h4 class="highlight-title">Modern Responsive Web Development</h4>
+                  <p class="highlight-desc">Mobile-first design, semantic HTML5, CSS3 Grid/Flexbox, and client-side state handling.</p>
                 </div>
               </div>
+
+              <!-- Highlight 3 -->
               <div class="highlight-item">
                 <div class="highlight-icon"><i class="fa-solid fa-award"></i></div>
-                <div>
+                <div class="highlight-info">
                   <h4 class="highlight-title">Certifications &amp; Hands-On Skills</h4>
                   <p class="highlight-desc">COPADO AI Trail, IBM SkillsBuild, Coursera AI, and Microsoft Agile Projects.</p>
                 </div>
@@ -186,72 +289,79 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- ======================================================================
+         SKILLS SECTION: Categorized Technical Competencies
+         ====================================================================== -->
     <section class="skills section" id="skills">
       <div class="container">
+        <!-- Section Header -->
         <div class="section-header">
-          <span class="section-tag">Technical Competencies</span>
+          <span class="section-tag">// TECHNICAL ARSENAL</span>
           <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-description">A curated overview of programming languages, web technologies, and developer tools in my workflow.</p>
           <div class="section-divider"></div>
         </div>
 
         <div class="skills-grid">
-          <!-- Programming Languages -->
+          <!-- Card 1: Programming Languages -->
           <div class="skill-category-card">
             <div class="category-header">
-              <div class="category-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="category-icon icon-cyan"><i class="fa-solid fa-laptop-code"></i></div>
               <h3 class="category-title">Programming Languages</h3>
             </div>
             <div class="skill-items">
-              <div class="skill-pill"><i class="fa-brands fa-python"></i> Python</div>
-              <div class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</div>
-              <div class="skill-pill"><i class="fa-brands fa-java"></i> Java</div>
-              <div class="skill-pill"><i class="fa-solid fa-code"></i> C / C++</div>
-              <div class="skill-pill"><i class="fa-solid fa-database"></i> MySQL</div>
+              <div class="skill-pill"><i class="fa-brands fa-python text-amber"></i> Python</div>
+              <div class="skill-pill"><i class="fa-brands fa-js text-yellow"></i> JavaScript (ES6+)</div>
+              <div class="skill-pill"><i class="fa-brands fa-java text-red"></i> Java</div>
+              <div class="skill-pill"><i class="fa-solid fa-code text-cyan"></i> C / C++</div>
+              <div class="skill-pill"><i class="fa-solid fa-database text-blue"></i> MySQL</div>
             </div>
           </div>
 
-          <!-- Web Development -->
+          <!-- Card 2: Web Technologies -->
           <div class="skill-category-card">
             <div class="category-header">
-              <div class="category-icon"><i class="fa-brands fa-html5"></i></div>
+              <div class="category-icon icon-purple"><i class="fa-brands fa-html5"></i></div>
               <h3 class="category-title">Web Technologies</h3>
             </div>
             <div class="skill-items">
-              <div class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5 (Semantic)</div>
-              <div class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3 &amp; Flexbox/Grid</div>
-              <div class="skill-pill"><i class="fa-solid fa-mobile"></i> Responsive UI/UX</div>
-              <div class="skill-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> CSS Keyframes</div>
-              <div class="skill-pill"><i class="fa-solid fa-server"></i> Python Flask</div>
-              <div class="skill-pill"><i class="fa-solid fa-floppy-disk"></i> Web Storage API</div>
+              <div class="skill-pill"><i class="fa-brands fa-html5 text-orange"></i> HTML5 (Semantic)</div>
+              <div class="skill-pill"><i class="fa-brands fa-css3-alt text-blue"></i> CSS3 &amp; Flexbox/Grid</div>
+              <div class="skill-pill"><i class="fa-solid fa-mobile text-cyan"></i> Responsive UI/UX</div>
+              <div class="skill-pill"><i class="fa-solid fa-wand-magic-sparkles text-purple"></i> CSS Keyframes</div>
+              <div class="skill-pill"><i class="fa-solid fa-server text-white"></i> Python Flask</div>
+              <div class="skill-pill"><i class="fa-solid fa-floppy-disk text-green"></i> Web Storage API</div>
             </div>
           </div>
 
-          <!-- Tools & Platforms -->
+          <!-- Card 3: Tools & Platforms -->
           <div class="skill-category-card">
             <div class="category-header">
-              <div class="category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <div class="category-icon icon-amber"><i class="fa-solid fa-screwdriver-wrench"></i></div>
               <h3 class="category-title">Tools &amp; Platforms</h3>
             </div>
             <div class="skill-items">
-              <div class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git &amp; Version Control</div>
-              <div class="skill-pill"><i class="fa-brands fa-github"></i> GitHub</div>
-              <div class="skill-pill"><i class="fa-solid fa-code"></i> VS Code</div>
-              <div class="skill-pill"><i class="fa-brands fa-salesforce"></i> Salesforce</div>
-              <div class="skill-pill"><i class="fa-solid fa-chart-pie"></i> Data Cleaning &amp; Analytics</div>
-              <div class="skill-pill"><i class="fa-solid fa-language"></i> English &amp; Kannada</div>
+              <div class="skill-pill"><i class="fa-brands fa-git-alt text-red"></i> Git &amp; Version Control</div>
+              <div class="skill-pill"><i class="fa-brands fa-github text-white"></i> GitHub</div>
+              <div class="skill-pill"><i class="fa-solid fa-code text-blue"></i> VS Code</div>
+              <div class="skill-pill"><i class="fa-brands fa-salesforce text-cyan"></i> Salesforce</div>
+              <div class="skill-pill"><i class="fa-solid fa-chart-pie text-purple"></i> Data Cleaning &amp; Analytics</div>
+              <div class="skill-pill"><i class="fa-solid fa-diagram-project text-green"></i> Agile Methodology</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- ======================================================================
+         PROJECTS SECTION: Featured Internship & Academic Projects
+         ====================================================================== -->
     <section class="projects section" id="projects">
       <div class="container">
+        <!-- Section Header -->
         <div class="section-header">
-          <span class="section-tag">Portfolio Work</span>
-          <h2 class="section-title">Featured Projects</h2>
+          <span class="section-tag">// FEATURED WORK</span>
+          <h2 class="section-title">Internship Projects</h2>
           <p class="section-description">Real-world web applications built during the SAM AI Technologies Internship &amp; Academic Journey.</p>
           <div class="section-divider"></div>
         </div>
@@ -260,7 +370,7 @@
           <!-- Project 1: Smart To-Do App (Task 2) -->
           <article class="project-card">
             <div class="project-img-wrapper">
-              <img src="assets/images/project-todo.svg" alt="Smart Task &amp; To-Do Manager Preview" class="project-img" loading="lazy" />
+              <img src="assets/images/project-todo.svg" alt="TaskFlow — Smart Task &amp; To-Do Manager Preview" class="project-img" loading="lazy" />
               <div class="project-overlay-badge">SAM AI • Task 2</div>
             </div>
             <div class="project-content">
@@ -279,10 +389,10 @@
                 <span>Web Storage</span>
               </div>
               <div class="project-actions">
-                <a href="https://ajayhukkeri6363-cpu.github.io/sam-ai-internship-todo-app/" class="btn btn-sm btn-primary" target="_blank" rel="noopener">
+                <a href="https://ajayhukkeri6363-cpu.github.io/sam-ai-internship-todo-app/" class="btn btn-sm btn-cinematic-primary" target="_blank" rel="noopener">
                   <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
                 </a>
-                <a href="https://github.com/ajayhukkeri6363-cpu/sam-ai-internship-todo-app" class="btn btn-sm btn-outline" target="_blank" rel="noopener">
+                <a href="https://github.com/ajayhukkeri6363-cpu/sam-ai-internship-todo-app" class="btn btn-sm btn-cinematic-outline" target="_blank" rel="noopener">
                   <i class="fa-brands fa-github"></i> GitHub
                 </a>
               </div>
@@ -292,7 +402,7 @@
           <!-- Project 2: Interactive Web Music Player (Task 4) -->
           <article class="project-card">
             <div class="project-img-wrapper">
-              <img src="assets/images/project-music.svg" alt="Interactive Web Music Player Preview" class="project-img" loading="lazy" />
+              <img src="assets/images/project-music.svg" alt="AuraStream Web Music Player Preview" class="project-img" loading="lazy" />
               <div class="project-overlay-badge">SAM AI • Task 4</div>
             </div>
             <div class="project-content">
@@ -311,10 +421,10 @@
                 <span>Glassmorphism</span>
               </div>
               <div class="project-actions">
-                <a href="https://ajayhukkeri6363-cpu.github.io/sam-ai-internship-music-player/" class="btn btn-sm btn-primary" target="_blank" rel="noopener">
+                <a href="https://ajayhukkeri6363-cpu.github.io/sam-ai-internship-music-player/" class="btn btn-sm btn-cinematic-primary" target="_blank" rel="noopener">
                   <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
                 </a>
-                <a href="https://github.com/ajayhukkeri6363-cpu/sam-ai-internship-music-player" class="btn btn-sm btn-outline" target="_blank" rel="noopener">
+                <a href="https://github.com/ajayhukkeri6363-cpu/sam-ai-internship-music-player" class="btn btn-sm btn-cinematic-outline" target="_blank" rel="noopener">
                   <i class="fa-brands fa-github"></i> GitHub
                 </a>
               </div>
@@ -324,7 +434,7 @@
           <!-- Project 3: Developer Portfolio (Task 3 + Task 1) -->
           <article class="project-card">
             <div class="project-img-wrapper">
-              <img src="assets/images/project-portfolio.svg" alt="Developer Portfolio Website Preview" class="project-img" loading="lazy" />
+              <img src="assets/images/project-portfolio.svg" alt="Cinematic Developer Portfolio Preview" class="project-img" loading="lazy" />
               <div class="project-overlay-badge">SAM AI • Task 1 &amp; 3</div>
             </div>
             <div class="project-content">
@@ -343,10 +453,10 @@
                 <span>Responsive</span>
               </div>
               <div class="project-actions">
-                <a href="#hero" class="btn btn-sm btn-primary">
+                <a href="#hero" class="btn btn-sm btn-cinematic-primary">
                   <i class="fa-solid fa-eye"></i> Current Page
                 </a>
-                <a href="https://github.com/ajayhukkeri6363-cpu/sam-ai-internship-portfolio" class="btn btn-sm btn-outline" target="_blank" rel="noopener">
+                <a href="https://github.com/ajayhukkeri6363-cpu/sam-ai-internship-portfolio" class="btn btn-sm btn-cinematic-outline" target="_blank" rel="noopener">
                   <i class="fa-brands fa-github"></i> GitHub
                 </a>
               </div>
@@ -356,11 +466,14 @@
       </div>
     </section>
 
-    <!-- Resume Section -->
+    <!-- ======================================================================
+         RESUME SECTION: Official PDF Download & Credentials
+         ====================================================================== -->
     <section class="resume section" id="resume">
       <div class="container">
+        <!-- Section Header -->
         <div class="section-header">
-          <span class="section-tag">Qualifications</span>
+          <span class="section-tag">// QUALIFICATIONS</span>
           <h2 class="section-title">Resume &amp; Education</h2>
           <div class="section-divider"></div>
         </div>
@@ -373,7 +486,7 @@
             <div class="resume-details">
               <h3 class="resume-heading">Curriculum Vitae / Resume — Ajay Hukkeri</h3>
               <p class="resume-summary">
-                Undergraduate in Computer Science &amp; Engineering at REVA University, Bangalore. View my technical education, certified skills, and project portfolio.
+                Undergraduate in Computer Science &amp; Engineering at REVA University, Bangalore. View my verified academic education, certified skills, and internship project accomplishments.
               </p>
               <div class="resume-quick-facts">
                 <span class="fact-chip"><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE • REVA University</span>
@@ -382,10 +495,10 @@
               </div>
             </div>
             <div class="resume-cta-box">
-              <a href="assets/docs/Ajay_Hukkeri_Resume.pdf" download="Ajay_Hukkeri_Resume.pdf" class="btn btn-primary" id="download-resume-btn">
+              <a href="assets/docs/Ajay_Hukkeri_Resume.pdf" download="Ajay_Hukkeri_Resume.pdf" class="btn btn-cinematic-primary" id="download-resume-btn">
                 <i class="fa-solid fa-download"></i> Download PDF
               </a>
-              <a href="assets/docs/Ajay_Hukkeri_Resume.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+              <a href="assets/docs/Ajay_Hukkeri_Resume.pdf" target="_blank" rel="noopener" class="btn btn-cinematic-secondary">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> View PDF
               </a>
             </div>
@@ -394,22 +507,25 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- ======================================================================
+         CONTACT SECTION: Direct Inquiries & Validation Form
+         ====================================================================== -->
     <section class="contact section" id="contact">
       <div class="container">
+        <!-- Section Header -->
         <div class="section-header">
-          <span class="section-tag">Get in Touch</span>
+          <span class="section-tag">// GET IN TOUCH</span>
           <h2 class="section-title">Contact Me</h2>
-          <p class="section-description">Have a project opportunity, feedback, or collaboration idea? Feel free to reach out directly via Email or LinkedIn.</p>
+          <p class="section-description">Have an internship opportunity, project collaboration, or inquiry? Feel free to send a message directly.</p>
           <div class="section-divider"></div>
         </div>
 
         <div class="contact-grid">
-          <!-- Contact Information Cards -->
+          <!-- Left Column: Contact Cards -->
           <div class="contact-info">
             <div class="info-card">
               <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
-              <div>
+              <div class="info-details">
                 <h4 class="info-title">Email</h4>
                 <a href="mailto:ajayhukkeri6363@gmail.com" class="info-link">ajayhukkeri6363@gmail.com</a>
               </div>
@@ -417,7 +533,7 @@
 
             <div class="info-card">
               <div class="info-icon"><i class="fa-brands fa-linkedin"></i></div>
-              <div>
+              <div class="info-details">
                 <h4 class="info-title">LinkedIn</h4>
                 <a href="https://www.linkedin.com/in/ajay-hukkeri-45094233a/" target="_blank" rel="noopener noreferrer" class="info-link">linkedin.com/in/ajay-hukkeri-45094233a/</a>
               </div>
@@ -425,7 +541,7 @@
 
             <div class="info-card">
               <div class="info-icon"><i class="fa-brands fa-github"></i></div>
-              <div>
+              <div class="info-details">
                 <h4 class="info-title">GitHub</h4>
                 <a href="https://github.com/ajayhukkeri6363-cpu" target="_blank" rel="noopener noreferrer" class="info-link">github.com/ajayhukkeri6363-cpu</a>
               </div>
@@ -433,14 +549,14 @@
 
             <div class="info-card">
               <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-              <div>
+              <div class="info-details">
                 <h4 class="info-title">Location</h4>
                 <p class="info-text">Bengaluru, Karnataka, India</p>
               </div>
             </div>
           </div>
 
-          <!-- Contact Form with Client-Side Validation -->
+          <!-- Right Column: Interactive Validation Form -->
           <div class="contact-form-wrapper">
             <form id="contact-form" class="contact-form" novalidate>
               <div class="form-group">
@@ -478,8 +594,9 @@
                 <span class="error-msg" id="message-error"></span>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
-                <i class="fa-regular fa-paper-plane"></i> Send Message
+              <button type="submit" class="btn btn-cinematic-primary btn-block" id="submit-btn">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span>Send Message</span>
               </button>
             </form>
           </div>
@@ -488,15 +605,17 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- ======================================================================
+       FOOTER: Brand, Navigation & Internship Attribution
+       ====================================================================== -->
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-brand">
         <a href="#hero" class="logo">
-          <span class="logo-bracket">&lt;</span><span class="logo-name">Ajay.Hukkeri</span><span class="logo-bracket"> /&gt;</span>
+          <span class="logo-tag">&lt;</span><span class="logo-name">Ajay.Hukkeri</span><span class="logo-tag"> /&gt;</span>
         </a>
         <p class="footer-tagline">
-          Built with HTML5, CSS3, &amp; Modern JavaScript for SAM AI Technologies Web Development Internship.
+          Crafted with semantic HTML5, modern CSS3, and ES6+ JavaScript for the SAM AI Technologies Web Development Internship.
         </p>
       </div>
 
@@ -515,11 +634,12 @@
       <div class="footer-contact">
         <h4 class="footer-title">Internship Attribution</h4>
         <p class="footer-info">Organization: <strong>SAM AI Technologies</strong></p>
-        <p class="footer-info">Track: Web Development</p>
+        <p class="footer-info">Track: <strong>Web Development</strong></p>
         <p class="footer-info">Developer: <strong>Ajay Hukkeri</strong></p>
         <div class="footer-socials">
-          <a href="https://github.com/ajayhukkeri6363-cpu" target="_blank" rel="noopener" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/ajay-hukkeri-45094233a/" target="_blank" rel="noopener" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/ajayhukkeri6363-cpu" target="_blank" rel="noopener" aria-label="GitHub Profile" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ajay-hukkeri-45094233a/" target="_blank" rel="noopener" aria-label="LinkedIn Profile" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:ajayhukkeri6363@gmail.com" aria-label="Email" title="Email"><i class="fa-regular fa-envelope"></i></a>
         </div>
       </div>
     </div>
@@ -534,10 +654,10 @@
     </div>
   </footer>
 
-  <!-- Toast Notification Container -->
+  <!-- Toast Notification Feedback Container -->
   <div id="toast" class="toast" role="alert" aria-live="assertive"></div>
 
-  <!-- JavaScript -->
+  <!-- JavaScript Application Bundle -->
   <script src="js/main.js"></script>
 </body>
 </html>
