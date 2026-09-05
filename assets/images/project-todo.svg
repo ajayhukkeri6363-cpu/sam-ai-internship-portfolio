@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgTodo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" fill="url(#bgTodo)" />
+
+  <!-- App Card Container -->
+  <g filter="url(#cardShadow)">
+    <rect x="70" y="35" width="460" height="290" rx="16" fill="#111827" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+  </g>
+
+  <!-- Card Header -->
+  <rect x="70" y="35" width="460" height="50" rx="16" fill="#1f2937" />
+  <circle cx="100" cy="60" r="6" fill="#ef4444" />
+  <circle cx="120" cy="60" r="6" fill="#f59e0b" />
+  <circle cx="140" cy="60" r="6" fill="#10b981" />
+  <text x="300" y="66" fill="#9ca3af" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" text-anchor="middle">Task &amp; To-Do Dashboard</text>
+
+  <!-- Add Task Bar -->
+  <rect x="100" y="105" width="290" height="38" rx="8" fill="#1e293b" stroke="rgba(99, 102, 241, 0.4)" stroke-width="1.5" />
+  <text x="115" y="129" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Add a new task...</text>
+  <rect x="400" y="105" width="100" height="38" rx="8" fill="url(#btnGrad)" />
+  <text x="450" y="129" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" text-anchor="middle">+ Add Task</text>
+
+  <!-- Filter Pills -->
+  <rect x="100" y="155" width="50" height="24" rx="12" fill="#6366f1" />
+  <text x="125" y="171" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" text-anchor="middle">All (3)</text>
+  
+  <rect x="160" y="155" width="65" height="24" rx="12" fill="#1e293b" stroke="rgba(255,255,255,0.08)" />
+  <text x="192" y="171" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" text-anchor="middle">Active (2)</text>
+
+  <rect x="235" y="155" width="85" height="24" rx="12" fill="#1e293b" stroke="rgba(255,255,255,0.08)" />
+  <text x="277" y="171" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" text-anchor="middle">Completed (1)</text>
+
+  <!-- Task Item 1 (Completed) -->
+  <rect x="100" y="195" width="400" height="36" rx="8" fill="#1e293b" opacity="0.7" />
+  <circle cx="120" cy="213" r="8" fill="#10b981" />
+  <path d="M 116 213 L 119 216 L 125 210" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" />
+  <text x="140" y="218" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" text-decoration="line-through">Design portfolio wireframe &amp; responsive layout</text>
+  <rect x="435" y="202" width="50" height="20" rx="10" fill="rgba(16, 185, 129, 0.2)" />
+  <text x="460" y="216" fill="#34d399" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" text-anchor="middle">Done</text>
+
+  <!-- Task Item 2 (Active High Priority) -->
+  <rect x="100" y="240" width="400" height="36" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.08)" />
+  <circle cx="120" cy="258" r="8" fill="none" stroke="#94a3b8" stroke-width="2" />
+  <text x="140" y="263" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="500">Implement LocalStorage persistence logic</text>
+  <rect x="435" y="247" width="50" height="20" rx="10" fill="rgba(239, 68, 68, 0.2)" />
+  <text x="460" y="261" fill="#f87171" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" text-anchor="middle">High</text>
+
+  <!-- Task Item 3 (Active Normal Priority) -->
+  <rect x="100" y="285" width="400" height="36" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.08)" />
+  <circle cx="120" cy="303" r="8" fill="none" stroke="#94a3b8" stroke-width="2" />
+  <text x="140" y="308" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="500">Record project demonstration video</text>
+  <rect x="435" y="292" width="50" height="20" rx="10" fill="rgba(245, 158, 11, 0.2)" />
+  <text x="460" y="306" fill="#fbbf24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" text-anchor="middle">Medium</text>
+</svg>
