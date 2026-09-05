@@ -11,14 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggleBtn = document.getElementById('theme-toggle');
   const htmlElement = document.documentElement;
 
-  // Initialize theme from localStorage or system preference
+  // Initialize theme from localStorage, defaulting to cinematic dark
   const savedTheme = localStorage.getItem('sam_portfolio_theme');
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
   if (savedTheme) {
     htmlElement.setAttribute('data-theme', savedTheme);
-  } else if (!systemPrefersDark) {
-    htmlElement.setAttribute('data-theme', 'light');
   } else {
     htmlElement.setAttribute('data-theme', 'dark');
   }
