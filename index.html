@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ajay Hukkeri - Computer Science Student & Web Developer Portfolio" />
+  <meta name="description" content="Ajay Hukkeri - Computer Science Student &amp; Web Developer Portfolio" />
   <title>Ajay Hukkeri | Developer Portfolio</title>
   
   <!-- Fonts & Icons -->
@@ -16,6 +16,13 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- Ambient Cinematic Background Lighting -->
+  <div class="ambient-layer">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
   <!-- Header & Navigation -->
   <header class="header" id="header">
     <div class="container nav-container">
@@ -53,22 +60,29 @@
   <main id="main-content">
     <!-- Hero Section -->
     <section class="hero section" id="hero">
+      <!-- High-End Cinematic Background Layer -->
+      <div class="hero-bg-media" aria-hidden="true">
+        <img src="assets/images/hero-cinematic-bg.jpg" alt="" class="hero-bg-img" />
+        <div class="hero-vignette-overlay"></div>
+      </div>
+
       <div class="container hero-container">
         <div class="hero-content">
           <div class="hero-badge">
             <span class="status-dot"></span> Open for Software &amp; Web Development Roles
           </div>
           <h1 class="hero-title">
-            Hi, I'm <span class="highlight-text">AJAY HUKKERI</span>
-            <br />
-            <span class="hero-subtitle">Computer Science Student / Web Developer</span>
+            Hi, I'm <span class="highlight-text">Ajay Hukkeri</span>
           </h1>
+          <p class="hero-subtitle">
+            Computer Science Student | Web Developer
+          </p>
           <p class="hero-description">
             Passionate Computer Science undergraduate at REVA University, specializing in designing and implementing responsive, user-centric web applications with clean architecture and modern performance.
           </p>
           <div class="hero-cta-group">
             <a href="#projects" class="btn btn-primary">
-              <i class="fa-solid fa-layer-group"></i> View Projects
+              <i class="fa-solid fa-layer-group"></i> View My Work
             </a>
             <a href="#contact" class="btn btn-secondary">
               <i class="fa-regular fa-envelope"></i> Get in Touch
@@ -246,7 +260,7 @@
           <!-- Project 1: Smart To-Do App (Task 2) -->
           <article class="project-card">
             <div class="project-img-wrapper">
-              <img src="assets/images/project-todo.svg" alt="Smart Task & To-Do Manager Preview" class="project-img" />
+              <img src="assets/images/project-todo.svg" alt="Smart Task &amp; To-Do Manager Preview" class="project-img" loading="lazy" />
               <div class="project-overlay-badge">SAM AI • Task 2</div>
             </div>
             <div class="project-content">
@@ -278,7 +292,7 @@
           <!-- Project 2: Interactive Web Music Player (Task 4) -->
           <article class="project-card">
             <div class="project-img-wrapper">
-              <img src="assets/images/project-music.svg" alt="Interactive Web Music Player Preview" class="project-img" />
+              <img src="assets/images/project-music.svg" alt="Interactive Web Music Player Preview" class="project-img" loading="lazy" />
               <div class="project-overlay-badge">SAM AI • Task 4</div>
             </div>
             <div class="project-content">
@@ -310,7 +324,7 @@
           <!-- Project 3: Developer Portfolio (Task 3 + Task 1) -->
           <article class="project-card">
             <div class="project-img-wrapper">
-              <img src="assets/images/project-portfolio.svg" alt="Developer Portfolio Website Preview" class="project-img" />
+              <img src="assets/images/project-portfolio.svg" alt="Developer Portfolio Website Preview" class="project-img" loading="lazy" />
               <div class="project-overlay-badge">SAM AI • Task 1 &amp; 3</div>
             </div>
             <div class="project-content">
@@ -391,7 +405,7 @@
         </div>
 
         <div class="contact-grid">
-          <!-- Contact Information Cards (No public phone number displayed as per privacy preference) -->
+          <!-- Contact Information Cards -->
           <div class="contact-info">
             <div class="info-card">
               <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
