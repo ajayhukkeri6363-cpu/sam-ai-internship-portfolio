@@ -1,7 +1,7 @@
 # Interactive Developer Portfolio — SAM AI Technologies Internship (Task 3 & 1)
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://ajayhukkeri6363-cpu.github.io/sam-ai-developer-portfolio)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/ajayhukkeri6363-cpu/sam-ai-developer-portfolio)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://ajayhukkeri6363-cpu.github.io/sam-ai-internship-portfolio)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/ajayhukkeri6363-cpu/sam-ai-internship-portfolio)
 [![Internship](https://img.shields.io/badge/Internship-SAM%20AI%20Technologies-indigo?style=for-the-badge)](https://sites.google.com/view/sam-ai-technologies/home)
 
 > A modern, responsive, and accessible personal developer portfolio built by **Ajay Hukkeri** for the **SAM AI Technologies Web Development Internship Program**.
@@ -61,8 +61,8 @@ portfolio/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/ajayhukkeri6363-cpu/sam-ai-developer-portfolio.git
-   cd sam-ai-developer-portfolio/portfolio
+   git clone https://github.com/ajayhukkeri6363-cpu/sam-ai-internship-portfolio.git
+   cd sam-ai-internship-portfolio/portfolio
    ```
 
 2. **Run locally**:
@@ -77,7 +77,7 @@ portfolio/
 1. Push your repository to GitHub.
 2. Navigate to repository **Settings** -> **Pages**.
 3. Under **Branch**, select `main` and root folder `/` (or `/portfolio`), then click **Save**.
-4. Your site will be published at `https://ajayhukkeri6363-cpu.github.io/sam-ai-developer-portfolio/`.
+4. Your site will be published at `https://ajayhukkeri6363-cpu.github.io/sam-ai-internship-portfolio/`.
 
 ---
 
